@@ -1,40 +1,28 @@
+const users = {
+    'username': 'password',
+    'Admin9': 'Aestivial',
+    'a': 'p',
+    '':''
+  };
 
-if(!localStorage.getItem('loggedInUser')){
-    window.location.href = 'sub/login.html';
-  }      
-  
   function handleEnter(event) {
     if (event.keyCode === 13) {
-      const command = document.getElementById("command-input").value;
-      if (pages.hasOwnProperty(command)) {
-        window.location.href = pages[command];
-      } else {
-        document.getElementById("terminal-output").innerHTML = `<p>Error: Command not found: ${command}</p>`;
-      }
+      handleLogin();
     }
   }
   
   
-  const pages = {
-    'home': 'home.html',
-    'about': 'about.html',
-    'projects': 'projects.html',
-    'contact': 'contact.html',
-  }
-
-  const command = document.getElementById("command-input");
-if (command.value.length > 0) {
-    command.classList.remove("blink");
-}
-
-command.addEventListener("focus", function() {
-    command.classList.remove("blink");
-});
-
-command.addEventListener("input", function() {
-    if (command.value.length === 0) {
-        command.classList.add("blink");
+  function handleLogin() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    if (users.hasOwnProperty(username) && users[username] === password) {
+      localStorage.setItem('loggedInUser', username);
+      window.location.href = 'main/terminal.html';
     } else {
-        command.classList.remove("blink");
+      alert('Invalid credentials');
     }
-});
+  }
+  
+  // set the default text in the username and password fields
+document.getElementById("username").placeholder = "username";
+document.getElementById("password").placeholder = "password"; 
