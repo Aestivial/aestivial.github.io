@@ -1,0 +1,130 @@
+.home-page {
+    background-image: url('https://i.pinimg.com/originals/62/aa/d0/62aad0c67db5844bd816a01aabd15a89.gif');
+}
+.login-page {
+    background-image: url('https://i.gifer.com/origin/3a/3ad09d4905511990cccc98d904bd1e94_w200.webp');
+}
+
+.blink {
+  border: none;
+  animation: blink 1s infinite;
+  font-size: 1em;
+  padding: 10px;
+  width: 100%;
+}
+
+@keyframes blink {
+  0% {
+      box-shadow: 0 0 0px #fff;
+  }
+  50% {
+      box-shadow: 0 0 10px #fff;
+  }
+  100% {
+      box-shadow: 0 0 0px #fff;
+  }
+}
+
+
+body {
+    background: url(https://i.gifer.com/origin/47/4705530785b66c5fcbdc84fba4315dc4.gif) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: monospace;
+  }
+  
+  #terminal {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+  }
+  
+  #terminal-header {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #terminal-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #terminal-input > span {
+    margin-right: 10px;
+  }
+  
+  #command-input {
+    border: none;
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  #terminal-output {
+    margin-bottom: 20px;
+  }
+  
+  #login-form {
+    width: 50%;
+    text-align: center;
+  }
+  
+  label {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    width: 100%;
+    background: #eee;
+    text-align: center;
+  }
+  
+  #username {
+    background-color: #fff;
+  }
+  
+  #password {
+    background-color: #fff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #description {
+    font-size: 0.7em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
