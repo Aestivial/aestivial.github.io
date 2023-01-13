@@ -16,10 +16,10 @@ if(!localStorage.getItem('loggedInUser')){
   
   
   const pages = {
-    'home': '../sub/home.html',
-    'about': '../sub/about.html',
+    'home': '../sub/home/home.html',
+    'about': '../Old Site/Resume/resume.html',
     'projects': '../sub/projects.html',
-    'contact': '../sub/contact.html',
+    'contact': '../sub/contact/contact.html',
   }
 
   const command = document.getElementById("command-input");

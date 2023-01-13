@@ -1,0 +1,23 @@
+.terminal {
+    background-color: #202123;
+    color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    font-family: 'Inconsolata', monospace;
+  }
+
+  #cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}  

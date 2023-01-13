@@ -2,7 +2,6 @@ const users = {
     'username': 'password',
     'Admin9': 'Aestivial',
     'a': 'p',
-    '':''
   };
 
   function handleEnter(event) {
