@@ -26,8 +26,6 @@ body {
     z-index: 1;
     animation: glitch 0.5s infinite ease-in-out; /* Add glitch animation */
     position: absolute;
-    top: 10%;
-    left: 30%;
     transform: translate(-50%, -50%); /* Center horizontally and vertically */
   }
 
@@ -120,8 +118,6 @@ body {
       opacity: 1;
     }
   }
-  
-  
 
 @keyframes typewriter {
     0% {

@@ -71,7 +71,7 @@ function playNextAnimation() {
       animationElement.style.opacity = 1; /* Set opacity to 1 before typing */
       const lines = scriptContent.split("\n");
       typeAnimation(lines, 0);
-      output.textContent = `{user_admin} with {ip_address} Logged !n succ3ssfully.\nThis is a remote term1nal of Aestivial's mach!ne. Session timeouts locked @5000ms. Try: help`;
+      output.textContent = `{user_admin} with {ip_address} Logged !n succ3ssfully.\nThis is a remote term1nal of Aestivial's mach!ne. Session timeouts locked @5000ms. Try: help or portfolio`;
     });
 }
 
